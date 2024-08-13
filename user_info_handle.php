@@ -16,7 +16,7 @@
 	$phone = $_POST['phone'];
 	$addr = $_POST['address'];
 	// friend 테이블에 레코드 삽입
-	$sql = "insert into friend (name, phone, address) values ($name, $phone, $addr);";
+	// $sql = "insert into friend (name, phone, address) values ('$name', '$phone',' $addr');";
 
 	// friend 레코드 조회
 	// $sql = "select * from friend;";
@@ -32,3 +32,6 @@
 
 	mysqli_close($conn);
 ?>
+
+<br>
+<a href="user_info_form.php">Back</a>
